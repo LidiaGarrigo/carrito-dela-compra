@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Shopping cart</title>
+</head>
+<body>
+  <h1><center>Fans Merchandising Shop</center></h1>
+  <div id= "productList">
+  </div>
+  
+
+  <div class="container">
+    <input class = "createInput"id="createName" type="text" placeholder="prodcut name">
+    <input class = "createInput" id="createPrice" type="number" min="1" placeholder="price">
+    <button id ="createButton">Create</button>
+  </div>
+  <center>
+    <button id = "calcButton" class="btn-success">calculatePrice</button>
+    <h1><span>Total Price:$</span><span id ="totalPrice">0.00</span></h1>
+  </center>
+  <script type="text/javascript" src="./js/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion del Stock</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2><center>Gestion de Stock</center></h2>
+    <ul class= "stockList"></ul>
+
+    <div>
+        <form name="productForm" onsubmit="return false">
+            <input name ="fname" id="createName" type="text" placeholder="product name">
+            <input name ="fcategory" id="createCategoty" type="text" placeholder="product category">
+            <input class = "btn-success" value ="Add product" type="submit"  id ="addButton">
+        </form>
+        <form name="RemoveForm" onsubmit="return false">
+            <input name ="findex" type="number" min="0" placeholder="index of product">
+            <input class = "btn-delete" value ="Remove product" type="submit"  id ="removeButton">
+        </form>
+        <form name="buyForm" onsubmit="return false">
+            <select class ="productSelect"></select>
+            <input name ="famount" type="number" min="0" placeholder="amount to buy">
+            <input class = "btn-success" value ="buy product" type="submit"  id ="buyButton">
+        </form>
+        <button id="sortButton">SORT</button>
+    </div>
+    <ol id ="rankingContainer">
+        <h3>Ranking List:</h3>
+    </ol>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
